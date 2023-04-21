@@ -4,6 +4,10 @@
 
 ![brainstorm](./react_pokemon_brainstorm.png)
 
+## Low fidelity wireframe
+
+![wireframe](./react_pokemon_wireframe.png)
+
 ## User story: 
 
 ```As a pokemon fanatic, I want to use a digital library, to view a variety of pokemon characters, so that I can see more of their details in order to choose the ones that I want to add to my collection```
