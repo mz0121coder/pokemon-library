@@ -1,0 +1,132 @@
+/* html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #090088;
+  background-image: repeating-linear-gradient(90deg, #1e00ff, #f20089);
+  background-size: cover;
+  animation: wave 10s infinite linear;
+  border-radius: 10px;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.center {
+  text-align: center;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-shadow: 1px 1px #000;
+}
+
+.card {
+  display: inline-block;
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  background-color: #8f0bd3;
+  background-image: repeating-linear-gradient(45deg, #8f0bd3, #c28bff 10%, #8f0bd3 20%);
+  box-shadow: 1px 1px 5px #000;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  z-index: -1;
+  background: repeating-linear-gradient(45deg, #f5ff5c, #57ff5c 10%, #f5ff5c 20%);
+  filter: blur(20px);
+}
+
+.card-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.card-button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 1rem;
+  background-color: #fff;
+  color: #8f0bd3;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.card-button:hover {
+  background-color: #8f0bd3;
+  color: #fff;
+}
+
+.card-details {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: #fff;
+  color: #8f0bd3;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px #000;
+}
+
+.card-types {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card-types h5 {
+  margin: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+.card-types li {
+  display: inline-block;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  background-color: #fff;
+  color: #8f0bd3;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}

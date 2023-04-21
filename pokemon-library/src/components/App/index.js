@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'; // Import the axios library to make API calls
+import '../App/index.css';
 
 import Card from '../Card'; // Import the Card component
 // import MainCard from '../MainCard'; // Import the PokemonList component
@@ -37,15 +38,21 @@ function App() {
 	);
 
 	return (
-		<main>
+		<main className='container'>
 			{/* <MainCard /> */}
 			{/* Render the PokemonList component */}
-			<label htmlFor='search'>Search:</label>
-			<input type='text' id='search' value={search} onChange={handleSearch} />
-
-			{filteredList.map(pokemon => (
-				<Card key={pokemon.id} pokemon={pokemon} /> // Map over the list of Pokemon data and render a Card component for each one
-			))}
+			<div className='search-container'>
+				<h1 className='center'>Choose your Pokemon</h1>
+				<label htmlFor='search' className='center'>
+					Search:
+				</label>
+				<input type='text' id='search' value={search} onChange={handleSearch} />
+			</div>
+			<div className='card-container'>
+				{filteredList.map(pokemon => (
+					<Card key={pokemon.id} pokemon={pokemon} /> // Map over the list of Pokemon data and render a Card component for each one
+				))}
+			</div>
 		</main>
 	);
 }

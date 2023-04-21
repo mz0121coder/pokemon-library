@@ -1,0 +1,42 @@
+.card {
+  display: inline-block;
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+}
+
+.card-image {
+  margin-right: 10px;
+}
+
+.card-button {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.card-details {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.card-types {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.card-abilities {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.card-height-weight {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
