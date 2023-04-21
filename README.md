@@ -1,5 +1,13 @@
 # React-athon
 
+## User story: 
+
+```As a pokemon fanatic, I want to use a digital library, to view a variety of pokemon characters, so that I can see more of their details in order to choose the ones that I want to add to my collection```
+
+## Component tree (might change)
+
+![component tree](./react_pokemon_component_tree.png)
+
 ## Task 1 - API Research (20 - 30 mins)
 
 Choose at least one external API to fetch data from that you'll then use in your React app. This [list](https://apilist.fun) may help. Remember to read the API's documentation and send test requests from Postman to view the data you get back first before deciding it's suitable to use. You can always use the API list we used in the hackathon earlier in the course as well.
