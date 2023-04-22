@@ -38,22 +38,30 @@ function App() {
 	);
 
 	return (
-		<main className='container'>
-			{/* <MainCard /> */}
-			{/* Render the PokemonList component */}
-			<div className='search-container'>
-				<h1 className='center'>Choose your Pokemon</h1>
-				<label htmlFor='search' className='center'>
-					Search:
-				</label>
-				<input type='text' id='search' value={search} onChange={handleSearch} />
-			</div>
-			<div className='card-container'>
-				{filteredList.map(pokemon => (
-					<Card key={pokemon.id} pokemon={pokemon} /> // Map over the list of Pokemon data and render a Card component for each one
-				))}
-			</div>
-		</main>
+		<div className='background-animation'>
+			{' '}
+			<main className='container'>
+				{/* <MainCard /> */}
+				{/* Render the PokemonList component */}
+				<div className='search-container'>
+					<h1 className='center'>Choose your Pokemon</h1>
+					<label htmlFor='search' className='center'>
+						Search:
+					</label>
+					<input
+						type='text'
+						id='search'
+						value={search}
+						onChange={handleSearch}
+					/>
+				</div>
+				<div className='card-container'>
+					{filteredList.map(pokemon => (
+						<Card key={pokemon.id} pokemon={pokemon} /> // Map over the list of Pokemon data and render a Card component for each one
+					))}
+				</div>
+			</main>
+		</div>
 	);
 }
 

@@ -1,21 +1,21 @@
-/* html, body {
-  height: 100%;
-}
-
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-} */
+}
 
 .container {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
   background-color: #090088;
-  background-image: repeating-linear-gradient(90deg, #1e00ff, #f20089);
+  background-image: repeating-linear-gradient(90deg, #1e00ff, #FF6000);
   background-size: cover;
-  animation: wave 10s infinite linear;
-  border-radius: 10px;
+  /* animation: wave 10s infinite linear; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
 }
 
 .search-container {
@@ -23,6 +23,30 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: 2rem;
+  width: 100%;
+}
+
+.search-container h1 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+label {
+  color: white;
+  margin-bottom: .5rem;
+  font-size: 1.3rem;
+}
+
+.search-container input[type="text"] {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #fff;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
 }
 
 .card-container {
@@ -30,13 +54,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 2rem;
-}
-
-.center {
-  text-align: center;
-  color: #fff;
-  font-family: Arial, sans-serif;
-  text-shadow: 1px 1px #000;
+  width: 100%;
 }
 
 .card {
@@ -95,38 +113,4 @@ body {
 .card-button:hover {
   background-color: #8f0bd3;
   color: #fff;
-}
-
-.card-details {
-  margin-top: 1rem;
-  padding: 0.5rem;
-  background-color: #fff;
-  color: #8f0bd3;
-  border-radius: 5px;
-  box-shadow: 1px 1px 5px #000;
-}
-
-.card-types {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.card-types h5 {
-  margin: 0;
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
-  font-family: Arial, sans-serif;
-  font-weight: bold;
-}
-
-.card-types li {
-  display: inline-block;
-  margin-right: 0.5rem;
-  margin-bottom: 0.5rem;
-  padding: 0.25rem 0.5rem;
-  background-color: #fff;
-  color: #8f0bd3;
-  border-radius: 5px;
-  font-family: Arial, sans-serif;
 }
