@@ -1,16 +1,14 @@
-
 # Pokemon Library
 
-A responsive library to search and view details for a specific pokemon. Built using React on a Friday hackathon. 
+A responsive and clean React app to search & view details from a list of 1000 pokemon. 
 
 ## Demo
 
 ![pokemon-library-demo](/pokemon-library/assets/pokemon-library-demo.gif)
 
-
 ## How to Use
 
-[Live URL](https://mz0121coder.github.io/pokemon-library/)
+Use the app on the [deployed URL](https://mz0121coder.github.io/pokemon-library/)
 
 ## API Reference
 
