@@ -1,6 +1,6 @@
 # Pokemon Library
 
-A responsive and clean React app to search & view details from a list of 1000 pokemon. 
+A responsive and clean React app to search & view details from a list of 500 pokemon. 
 
 ## Demo
 
