@@ -13,9 +13,9 @@ function App() {
 	useEffect(() => {
 		const getPokemonList = async () => {
 			const promises = []; // Create an empty array to hold promises for each API call
-			for (let i = 1; i <= 1000; i++) {
-				// Loop 100 times to get 100 random Pokemon
-				const url = `https://pokeapi.co/api/v2/pokemon/${i}`; // Generate the first 100 Pokemon's URL
+			for (let i = 1; i <= 500; i++) {
+				// Loop 100 times to get 500 random Pokemon
+				const url = `https://pokeapi.co/api/v2/pokemon/${i}`; // Generate the first 500 Pokemon's URL
 				promises.push(axios.get(url)); // Add a promise for the API call to the promises array
 			}
 			const responses = await Promise.all(promises); // Wait for all promises to resolve
